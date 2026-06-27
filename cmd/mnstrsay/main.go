@@ -7,6 +7,6 @@ import (
 
 func main() {
 
-	core.Clear()
+	core.ClearScreen()
 	ascii_art.Render()
 }
