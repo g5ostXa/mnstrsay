@@ -23,9 +23,13 @@ _**mnstrsay**_ is just another cowsay-like program
 I recommend you download the latest release's binary and it's `sha256sum.txt` from \
 the [releases page](https://github.com/g5ostXa/mnstrsay/releases), so you can verify your download.
 
-### Verify your download
-Make sure you have the binary and it's `sha256sum.txt` downloaded. \
-Then, run the following from the same directory:
+### Download with `curl`
+Get the binary and the sha256sum:
+```bash
+curl -L -O "https://github.com/g5ostXa/mnstrsay/releases/download/v0.1.0/mnstrsay-v0.1.0-linux-amd64"
+curl -L -O "https://github.com/g5ostXa/mnstrsay/releases/download/v0.1.0/sha256sum.txt"
+```
+Verify your download:
 ```bash
 sha256sum -c sha256sum.txt
 ```
@@ -33,6 +37,11 @@ sha256sum -c sha256sum.txt
 Here's what the output should look like:
 ```
 mnstrsay-v0.1.0-linux-amd64: OK
+```
+
+### Get the latest git
+```bash
+git clone --depth=1 https://github.com/g5ostXa/mnstrsay.git
 ```
 
 ### Usage
