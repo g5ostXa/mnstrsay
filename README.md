@@ -1,6 +1,24 @@
 ## MNSTRSAY
 _**mnstrsay**_ is just another cowsay-like program
 
+```go
+ ──────────────╮
+| Hello, world |
+╰──────────────
+     \
+      \
+       \
+    /\_______/\
+    |         |
+    |  X   X  |
+   <     -     >
+   (           )
+    \/-vvvv-\/
+     )      (
+     {######}
+      \____/
+```
+
 ### Installation
 I recommend you download the latest release's binary and it's `sha256sum.txt` from \
 the [releases page](https://github.com/g5ostXa/mnstrsay/releases), so you can verify your download.
