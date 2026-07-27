@@ -23,4 +23,14 @@ jobs:
 
       - name: Check Go formatting
         run: |
-          gofmt -w -e .
+          unformatted="$(gofmt -l .)"
+           if [ -n "$unformatted" ]; then
+            echo "The following files need gofmt:"
+            echo "$unformatted"
+            exit 1
+           fi
+
+      - name: Commit formatting changes
+        uses: stefanzweifel/git-auto-commit-action@v6
+        with:
+          commit_message: "chore: format Go code"
