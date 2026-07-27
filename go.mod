@@ -1,5 +1,3 @@
-module github.com/g5ostXa/mnstrsay
-
 go 1.26.4
 
 require charm.land/lipgloss/v2 v2.0.5
