@@ -47,7 +47,7 @@ git clone --depth=1 https://github.com/g5ostXa/mnstrsay.git
 
 You'll need to manually build the binary:
 ```bash
-go build -o "mnstrsay" ./cmd/mnstrsay
+go build -o "mnstrsay" .
 ```
 
 ### Usage
