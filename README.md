@@ -26,8 +26,8 @@ the [releases page](https://github.com/g5ostXa/mnstrsay/releases), so you can ve
 #### Using curl
 Get the binary and the sha256sum:
 ```bash
-curl -L -O "https://github.com/g5ostXa/mnstrsay/releases/download/v0.1.3/mnstrsay-v0.1.3-linux-amd64"
-curl -L -O "https://github.com/g5ostXa/mnstrsay/releases/download/v0.1.3/sha256sum.txt"
+curl -L -O "https://github.com/g5ostXa/mnstrsay/releases/download/v0.1.4/mnstrsay-v0.1.3-linux-amd64"
+curl -L -O "https://github.com/g5ostXa/mnstrsay/releases/download/v0.1.4/sha256sum.txt"
 ```
 Verify your download:
 ```bash
