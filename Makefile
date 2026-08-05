@@ -35,7 +35,7 @@ bump-version:
 	echo "$$VERSION_CLEAN" > .version; \
 	echo ":: Updating README.md..."; \
 	sed "s|download/v[^/]*|download/$$FULL_TAG|g" README.md > README.tmp && mv README.tmp README.md; \
-	sed "s|mnstrsay-v.*-linux-amd64|mnstrsay-$$FULL_TAG-linux-amd64|g" README.md > README.tmp && mv README.md; \
+	sed "s|mnstrsay-v.*-linux-amd64|mnstrsay-$$FULL_TAG-linux-amd64|g" README.md > README.tmp && mv README.tmp README.md; \
 	git add .version README.md; \
 	git commit -S -m "chore: bump version to $$FULL_TAG"; \
 	echo ":: Version bumped to $$FULL_TAG"; \
