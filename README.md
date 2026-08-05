@@ -1,4 +1,4 @@
-## MNSTRSAY
+# MNSTRSAY
 _**mnstrsay**_ is just another cowsay-like program
 
 ```go
@@ -19,7 +19,7 @@ _**mnstrsay**_ is just another cowsay-like program
       \____/
 ```
 
-### Installation
+## Installation
 I recommend you download the latest release's binary and it's `sha256sum.txt` from \
 the [releases page](https://github.com/g5ostXa/mnstrsay/releases), so you can verify your download.
 
@@ -39,30 +39,40 @@ Here's what the output should look like:
 mnstrsay-v0.1.3-linux-amd64: OK
 ```
 
+Move the binary anywhere on  your `$PATH` or simply move it to `$GOBIN`:
+```bash
+mv mnstrsay-v0.1.3-linux-amd64 "$GOBIN"/.
+```
+
 #### Using git
 Get the full source (latest git)
 ```bash
 git clone --depth=1 https://github.com/g5ostXa/mnstrsay.git
 ```
 
-You'll need to manually build the binary:
+Build the binary:
 ```bash
-go build -o "mnstrsay" .
+cd ./mnstrsay && make build
 ```
 
-### Usage
-First, make sure the binary is executable:
+Make sure the binary is executable:
 ```bash
 chmod +x mnstrsay-bin-name
 ```
 
-Then, to display the ascii art and the default message, \
+## Usage
+Print the cuurent version:
+```bash
+mnstrsay --version
+```
+
+To display the ascii art and the default message, \
 simply run the binary without any options:
 ```bash
-./mnstrsay-bin-name
+mnstrsay
 ```
 
 To display a custom message:
 ```bash
-./mnstrsay-bin-name "Your personalized message here"
+mnstrsay "This is my custom message"
 ```
